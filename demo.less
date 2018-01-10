@@ -1,0 +1,59 @@
+@import "node_modules/animate.less/animate.less";
+* {
+    margin: 0;
+    padding: 0;
+}
+.longdemo(@a,@b){
+    @sizedemo:sqrt(pow(@a,2)+pow(@b,2));
+}
+@keyframes mydemo {
+
+    from {
+      background-color: aqua;
+    }
+    to {
+        background-color: black;
+    }
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+.flex-container {
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    @media screen and (max-width: 300px) {
+        & {
+            background-color:red;
+        }
+    }
+    .animated;
+    .bounce;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    .myapi-item {
+        animation-duration: 6s;
+        animation-name: mydemo;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        animation-direction: reverse;
+        animation-iteration-count: infinite;
+        background-color: aqua;
+        margin: 20px auto;
+        width: 1000px;
+        .longdemo(18,18);
+        font-size: @sizedemo;
+        padding: 10px 10px 10px 10px;
+        .wrap-text-image{
+            text-align: center;
+            margin-top: 10px;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+    }
+}

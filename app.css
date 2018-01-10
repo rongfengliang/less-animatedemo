@@ -1,0 +1,57 @@
+* {
+  background-color: antiquewhite;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  color: royalblue;
+  font-size: 30px;
+  float: left;
+}
+.content:after {
+  clear: both;
+  content: " ";
+}
+.small {
+  width: auto;
+  height: 30px;
+}
+.cleanfix {
+  clear: both;
+}
+/* Provides extra visual weight and identifies the primary action in a set of buttons.
+
+    <button class="btn primary">Primary</button>
+*/
+.btn.primary {
+  background: steelblue;
+  color: snow;
+  border: 2px outset steelblue;
+}
+header nav ul li a {
+  color: red;
+}
+header nav ul li a:hover {
+  color: green;
+}
+.btn {
+  font-size: 20px;
+  border: 10px;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn + .btn-error {
+  color: red;
+}
+.btn .active {
+  color: cadetblue;
+}
+.btn-big__error {
+  color: red;
+}
+.btn-big--active {
+  cursor: wait;
+}

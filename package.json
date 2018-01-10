@@ -1,0 +1,15 @@
+{
+  "name": "myless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "animate.less": "^2.2.0",
+    "less": "^2.7.3",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "scripts": {
+    "build:less": "lessc demo.less demo.css",
+    "start": "live-server"
+  }
+}
